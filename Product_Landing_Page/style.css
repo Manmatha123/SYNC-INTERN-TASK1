@@ -1,0 +1,786 @@
+*{
+
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+html{
+    height: 100vh;
+    width: 100vw;
+    scroll-behavior: smooth; 
+
+}
+.container{
+    height: 100%;width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background-color: rgb(20, 20, 20);
+  scroll-behavior: smooth;
+  scroll-snap-type:proximity;
+}
+
+.navbar{
+    height:80px;width: 100vw;
+    display: flex;justify-content: center;
+    align-items: center; 
+   box-shadow:inset 1px 1px 2px black,inset -1px -1px 3px white;
+    color: aliceblue;
+    position: fixed;z-index: 8;
+    background-color: rgb(20, 20, 20);
+
+}
+.navdata{
+    height:80px;width: 100vw;
+    display: flex;justify-content: center;
+    align-items: center; 
+   box-shadow:inset 1px 1px 2px black,inset -1px -1px 3px white;
+    color: aliceblue;
+    position: relative;z-index: 8;
+    background-color: rgb(20, 20, 20);
+}
+.navbar p{
+    margin-right: auto;
+    font-size: 26px;
+    font-weight:550;    margin-left: 30px;
+}
+.navbar p span{
+    color: red;
+
+}
+.humberger,.cross{
+    position: absolute;
+    z-index:0;right:0px;
+    color: red;
+visibility: hidden;
+}
+.navbar ul{
+   
+    display: flex;
+    margin-right: 30px;
+}
+.navbar ul li{
+margin: 10px;
+list-style: none;
+height: 100%;
+
+}
+.navbar ul li a{
+
+    color: white;
+    height: 100%;
+    text-decoration: none;
+ 
+}
+
+.section1{
+    margin-top:80px;
+    height:auto;
+ width: 100vw;
+ display: flex;justify-content: center;
+ align-items: center; 
+ border: 1px solid white;
+ padding: 10px  0 80px 0;
+}
+
+.lefthome{
+    width: 60%;height: 100%;
+    display: flex;flex-direction: column;
+    align-items: center;
+    padding-left:10%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+}
+
+.parahome1{
+    width: 100%;
+    height: 50px;margin-top: 10px;
+    padding: 10px;
+}
+.lefthome h1{
+    margin-top: 19px;
+    font-size: medium;
+font-size:55px;
+width: 100%;height:auto;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+ span{
+    color: rgb(235, 7, 7);
+}
+.parahome2{
+    padding-top:30px;
+    height:150px;width: 100%;
+ 
+}
+.lefthome button{
+    height: 45px;width: 190px;
+    border: 0px solid black;
+    background:deepskyblue;color: white;font-size:17px;
+    margin-right: auto;
+    margin-top: 20px;transition: 2s;
+background:linear-gradient(-45deg,blue,deepskyblue);
+}
+.lefthome button:hover{
+    background:linear-gradient(45deg,blue,deepskyblue);
+    cursor: pointer;
+}
+
+.righthome{
+    width: 40%;height: 100%;justify-content: center;
+    display: flex;
+    align-items: center;  
+}
+.righthome img{
+    height:500px;
+    position: relative;
+    top:10px;
+    object-fit: cover;
+}
+
+
+/* section 2 css part is written here */
+
+.section2{
+    height:auto;
+ width: 100vw;
+ display: flex;justify-content: center;
+ align-items: center; 
+ border: 1px solid white;
+ box-shadow:0px 0.5px 9px  rgb(154, 154, 154);
+ flex-direction: column;
+ 
+}
+
+.headabout{
+    padding: 15px 0 0 0;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 80px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;font-size: 35px; color: rgb(154, 154, 154);
+}
+.aboutpage{
+    height:450px;
+    width: 100vw;
+    display: flex;justify-content: center;
+    align-items: center; 
+    padding: 10px  0 80px 0;
+    color: rgb(154, 154, 154);
+flex-direction: row-reverse;
+}
+
+.leftabout{
+    width: 60%;height: 100%;
+    display: flex;flex-direction: column;
+    align-items: center;
+    padding-left:10%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+}
+.rightabout{
+    width: 40%;height: 100%;justify-content: center;
+    display: flex;
+    align-items: center; 
+}
+.rightabout img{
+    height:100%;
+    width:auto;
+    object-fit: cover;
+}
+
+.abouth3{
+    width: 90%;
+    margin-right: auto;font-size: 30px;
+    color: rgb(154, 154, 154);
+}
+.aboutpara{
+    margin-top: 26px;
+    width: 95%;
+    margin-right: auto;
+
+}
+.leftabout ul{
+    height: 300px;
+    width: auto;
+    margin:30px auto 0 20px;
+}
+.leftabout ul li{
+    font-size: 18px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+margin-top:5px;
+}
+
+
+
+.contactpage{
+    height: auto;
+    width: 100vw;
+    background-color: rgb(20, 20, 20);
+    display: flex;justify-content: center;
+    align-items: center;flex-direction: column;
+    box-shadow:0px 0.5px 9px  rgb(154, 154, 154);
+}
+.contactinner{
+    height: 450px;
+    width: 100vw;
+    background-color: rgb(20, 20, 20);
+    display: flex;justify-content: center;
+    align-items: center;
+}
+.contactpage h1{
+    padding: 15px 0 0 0;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 80px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;font-size: 35px; color: rgb(154, 154, 154);
+}
+
+/* .contactform{
+    color: white;
+    width:100%;
+      height: 100%;
+display: flex; 
+justify-content: center;
+align-items: center;
+
+} */
+.leftcontact{
+    width: 50%;
+    height:auto;
+    color:white;
+margin-left: 100px;
+    flex-direction: column;
+}
+.leftcontact h1{
+    color: white;
+    font-size: 35px;
+}
+.teligrm{
+height: auto;
+font-size: 20px;
+margin-top:30px;
+cursor: pointer;
+color: gray;transition:transform 0.5s
+}
+.git{
+    height: auto;
+    font-size: 20px;
+    margin-top:20px;
+    cursor: pointer;
+    color: gray;transition:transform 0.5s
+    }
+    .phoneno{
+        height: auto;
+        font-size: 20px;
+        margin-top:20px;
+        margin-bottom:20px;
+        cursor: pointer;
+        color: gray;transition:transform 0.5s
+        }
+.git:hover{
+    color: white;
+transform: translateY(-2px);
+}
+.teligrm:hover{
+  
+transform: translateY(-2px);color: white;
+}
+.phoneno:hover{
+    
+transform: translateY(-2px); color: white;
+}
+
+           .icon{
+            display: flex;
+            margin-left:-10px;
+           }
+           .website{
+            margin-left:10px;
+           color: white;
+           text-decoration: none;
+           }
+           .location{
+           position: relative;
+           top:35px;
+           }
+           .locationdiv{
+          position: relative;
+            left:20px;top:0px;
+           }
+        .icon li{
+         list-style: none;
+            margin:10px;
+            height: 30px;
+            width: 30px;
+            cursor: pointer;
+            background: none;
+        }
+        .icon li #fb:hover{
+            transform: scale(1.1);  color: white;
+        }
+        
+        .icon li #linkedin:hover{
+            transform: scale(1.1);color: white; 
+         }
+         
+        .icon li #twiter:hover{
+            transform: scale(1.1);color: white; 
+         }
+        .icon li #insta:hover{
+            transform: scale(1.1);color: white;
+          
+         }
+
+        #fb,#insta,#twiter,#linkedin{
+        font-size: 30px;
+        color:gray;
+     transition:transform 0.5s;
+   
+}
+
+        .cvdownlod{
+            margin-top:25px;
+            height: 30px;
+            width: 120px;
+            color:white;
+            font-weight: 20px;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+            cursor: pointer;
+        background: linear-gradient(0deg,rgb(235, 7, 7),crimson);
+    
+        transition:transform 0.5s;
+        
+    }
+        .cvdownlod:hover{
+            transform: scale(1.1);
+         }
+.rightcontact{
+    width: 50%;
+    height:auto;
+    color:white;
+}
+.entername,.mail{
+    box-shadow:inset 3px 4px 4px black,inset -1px -2px 2px gray;
+    height: 40px;
+    width: 85%;
+    margin-top:20px;
+    outline: none;
+    border: none;    color:white;
+    background:transparent;
+    padding: 10px;
+  
+}
+.entername::placeholder,.mail::placeholder,.msg::placeholder{
+    color: white;
+}
+.msg{
+    height: 180px;
+    width: 85%;
+    margin-top:20px;
+    outline: none;
+    border: none;
+    color:white;
+ padding: 10px;
+   background: transparent;
+   box-shadow:inset 3px 4px 4px black,inset -1px -2px 2px gray;
+}
+.submitbtn{
+    margin-top:25px;
+    height: 30px;
+    width: 120px;
+    color:white;
+    font-weight: 20px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;    
+    transition:transform 0.5s;
+background: linear-gradient(0deg,rgb(235, 7, 7),crimson);
+}
+.submitbtn:hover{
+    transform: scale(1.1);
+ }
+
+
+#apptitel{
+    font-size:15px;
+    font-family: 'Franklin Gothic Medium', 
+    'Arial Narrow', Arial, sans-serif;
+    position:relative;bottom: 10px;
+}
+
+/* FEATURE PAGE IS WRITTEN HERE */
+.featurespage{
+    background-color: rgb(20, 20, 20); 
+    color: rgb(212, 212, 212);
+    box-shadow:0px 0.5px 9px  rgb(154, 154, 154);
+}
+.featuredata{
+    width: 100%;
+    height:500px;
+   display: flex;
+   justify-content: center;align-items: center;
+}
+.renderitemf{
+    width: auto;
+    height:AUTO;
+    padding: 20px 0  60px  0;
+    display:grid;
+   
+    grid-template-columns: repeat(3,2fr);
+}
+.featurediv{
+    height:200px;overflow: hidden;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 400px;cursor: pointer;
+margin:10px;position: relative;
+margin-top:15px;border-radius: 5px;
+
+box-shadow:inset 3px 4px 4px black,inset -1px -2px 4px gray;
+}
+.featurediv h2,.featurediv p{
+    width:100%;text-align: center;
+    z-index:2;
+}
+.featurediv h2,.featurediv p{
+padding:10px 25px 10px 25px;
+}
+.f1,.f2,.f3,.f4,.f5,.f6{
+height:0%;width:100%;
+position: absolute;
+color:crimson;
+bottom:0px;transition: 0.3s;
+}
+.featurediv:hover>.f1{
+    height:100%;
+    background:linear-gradient(0deg,rgb(247, 21, 66),transparent);
+}
+.featurediv:hover>.f2{
+    height:100%;
+    background:linear-gradient(0deg,rgb(247, 21, 66),transparent);
+}
+.featurediv:hover>.f3{
+    height:100%;
+    background:linear-gradient(0deg,rgb(247, 21, 66),transparent);
+}
+.featurediv:hover>.f4{
+    height:100%;
+    background:linear-gradient(0deg,rgb(247, 21, 66),transparent);
+}
+.featurediv:hover>.f5{
+    height:100%;
+    background:linear-gradient(0deg,rgb(247, 21, 66),transparent);
+}
+.featurediv:hover>.f6{
+    height:100%;
+    background:linear-gradient(0deg,rgb(247, 21, 66),transparent);
+}
+
+/* footer apge codeis here */
+
+.footer{
+    background-color: rgb(20, 20, 20); 
+    color:white;
+    height: 90px;
+    width: 100%;
+    display: flex;justify-content: center;
+    align-items: center;
+  /* border-top: 1px solid white; */
+  box-shadow: inset 0px 0.1px 2px white,inset -0px -0px 2px black;
+}
+.footer p{
+    font-size: 18px;
+}
+
+
+@media only screen and (max-width:600px){
+
+html{
+    height: 100vh;width: 100vw;
+  overflow-x: hidden;
+
+   
+}
+body{
+    overflow-x: hidden;
+}
+.container{
+    height: 100%;width:100vw;
+    overflow: hidden;
+    overflow-y: hidden;
+    
+
+}
+.navbar{
+height:75px;width: 100%;
+
+
+}
+.navbar p{
+
+    margin-right: auto;
+    font-size: 26px;
+     margin-left: 15px;
+}
+
+.navbar ul{
+   position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 0px;
+    background-color: rgba(255, 255, 255, 0.67); 
+    width: 120%;
+    color: black;
+    align-items: center;top: 0px;
+    transition:0.6s;
+z-index: 3;
+backdrop-filter:blur(7px);
+overflow: hidden;
+}
+.navbar ul li{
+margin:0px;
+list-style: none;
+padding: 10px;
+height:auto;
+position: relative;
+top:20px;
+}
+.navbar ul li a{
+    padding: 20px;
+    color: black;
+    height: auto;
+    text-decoration: none;
+
+}
+.humberger,.cross{
+    position: absolute;
+    z-index:15;right:35px;
+    color: red;
+visibility:visible;font-size:30px;
+
+}
+.cross{
+    visibility: hidden;
+}
+
+.section1{
+    margin-top:74px;
+padding: 0 10px 0 10px;
+ width: 100%;
+ flex-direction: column;
+
+}
+
+.lefthome{
+    width: 100%;height:400px;
+   padding: 0%;
+}
+
+.parahome1{
+    width: 100%;
+    height: 50px;margin-top: 0px;
+    padding: 10px;
+}
+.lefthome h1{
+    margin-top: 19px;
+    font-size: medium;
+font-size:35px;
+
+}
+
+.parahome2{
+    padding-top:30px;
+    height:auto;width: 90%;
+margin:0 auto 0  0px;
+ 
+}
+.lefthome button{
+    height: 35px;width: 130px;
+   
+}
+.lefthome button:hover{
+    background:linear-gradient(45deg,blue,deepskyblue);
+    cursor: pointer;
+}
+
+.righthome{
+    width: 100%;height:300px;justify-content: center;
+    display: flex;
+    align-items: center;  
+}
+.righthome img{
+    height:80%;
+width: auto;
+position: relative;
+top: -40px;
+ 
+}
+
+
+/* section 2 css part is written here */
+
+.section2{
+    height:auto;
+ width: 100%;
+ display: flex;
+ align-items: center; 
+ border: 1px solid white;
+ box-shadow:0px 0.5px 9px  rgb(154, 154, 154);
+flex-direction: column;
+ justify-content: center;
+}
+
+.headabout{
+   font-size: 28px;
+}
+.aboutpage{
+    height:auto;
+    width: 100%;
+    display: flex;justify-content: center;
+    align-items: center; 
+
+ padding: 0%;
+    color: rgb(154, 154, 154);
+    flex-direction: column;
+}
+
+.leftabout{
+    width: 100%;height:350px;
+
+    padding: 0 10px 0  10px ;
+}
+.rightabout{
+    width: 100%;height:200px;justify-content: center;
+    display: flex;
+    position: relative;
+top: -20px;
+    align-items: center; 
+}
+.rightabout img{
+    height:90%;
+width: auto;
+
+}
+
+.abouth3{
+    width: 90%;
+    margin-right: auto;font-size: 27px;
+    color: rgb(154, 154, 154);
+    text-align: left;padding:  0 50px 0 0;
+}
+.aboutpara{
+    margin-top:16px;
+    width: 85%;
+    height: auto;
+    margin-right: auto;
+
+}
+.leftabout ul{
+    height:200px;
+    width: auto;
+    margin:30px auto 0 20px;
+}
+.leftabout ul li{
+    font-size: 18px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+margin-top:5px;
+}
+
+
+
+.contactpage{
+    height: auto;
+    width: 100%;
+    background-color: rgb(20, 20, 20);
+    display: flex;justify-content: center;
+    align-items: center;flex-direction: column;
+    box-shadow:0px 0.5px 9px  rgb(154, 154, 154);
+}
+.contactinner{
+    height: auto;
+    width: 100%;
+    background-color: rgb(20, 20, 20);
+    display: flex;justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contactpage h1{
+   font-size: 28px;
+}
+
+.leftcontact{
+    width: 100%;
+    height:auto;
+margin-left: 40px;
+
+}
+.leftcontact h1{
+    color: white;
+    font-size: 28px;
+}
+
+.rightcontact{
+    width: 100%;
+    height:auto;
+    color:white;
+    padding: 10px;
+}
+
+
+
+
+
+/* FEATURE PAGE IS WRITTEN HERE */
+
+.featuredata{
+    width: 100%;
+    height:auto;
+   display: flex;
+   justify-content: center;
+}
+.renderitemf{
+    width: 100%;
+    height:auto;
+    padding:0;
+    display:grid;
+   place-items: center;
+    grid-template-columns: repeat(1,1fr);
+}
+.featurediv{
+    height:200px;
+width: 80%;cursor: pointer;
+margin:0px;position: relative;
+margin-bottom:10px;border-radius: 5px;
+position: relative;
+
+box-shadow:inset 3px 4px 4px black,inset -1px -2px 4px gray;
+}
+.featurediv h2,.featurediv p{
+    width:90%;text-align: center;
+    z-index:2;
+}
+
+.footer{
+ 
+    height: auto;
+    padding: 20px 10px  20px 10px ;
+    width: 100%;
+ 
+  /* border-top: 1px solid white; */
+ 
+}
+.footer p{
+    width: 80%;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+}
